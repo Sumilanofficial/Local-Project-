@@ -15,7 +15,7 @@ const UserManagement = () => {
 
     useEffect(() => {
         fetchData();
-    }, [fetchData]);
+    }, [fetchData])
 
     const handleRoleChange = async (userId, newRole) => {
         await DB.updateUser(userId, { role: newRole });
