@@ -11,7 +11,7 @@ const UserManagement = () => {
         const data = await DB.getUsers();
         setUsers(data);
         setLoading(false);
-    }, [])
+    }, []);
 
     useEffect(() => {
         fetchData();
